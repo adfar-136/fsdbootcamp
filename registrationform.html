@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Student registration form</legend>
+                <p>
+                    <label>Salutation
+                    <select name="" id="">
+                        <option selected>None</option>
+                        <option >Mr</option>
+                        <option >Ms.</option>
+                        <option >Dr</option>
+
+                    </select>
+                </label>
+                </p>
+                <p>
+                    <label>FirstName : <input  type="text"></label>
+                </p>
+                <p>
+                    <label>LastName : <input type="text"></label>
+                </p>
+                <p>
+                    Gender:
+                    <label><input name="gender" type="radio"> Male</label>
+                    <label><input name="gender" type="radio"> Female</label>
+                </p>
+                <p>
+                    <label>Date of Birth : <input type="date"></label>
+                </p>
+                <p>
+                    Your Favorite programming language
+                    <input type="text" list="languages">
+                    <datalist id="languages">
+                        <option value="C Programming"></option>
+                        <option value="C++ Programming"></option>
+                        <option value="Python Programming"></option>
+                        <option value="Web Programming"></option>
+                    </datalist>
+                </p>
+                <p>
+                    <label>
+                        Address : <br>
+                        <textarea name="" id="" cols="90" rows="10"></textarea>
+                    </label>
+                </p>
+                <p>
+                    <button type="submit">Submit</button>
+                </p>
+            </fieldset>
+        </form>
+    </body>
+</html>
