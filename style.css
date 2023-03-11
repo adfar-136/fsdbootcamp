@@ -1,0 +1,31 @@
+* {
+    text-align: center;
+    color: red;
+}
+#p1 {
+  background-color:aqua;
+  text-align: end;
+}
+p {
+color: rgb(51, 212, 23);
+font-size: 80px;
+background-color: red;
+}
+h1 {
+background-color: darkcyan;
+border: 5px solid rgb(128, 0, 21);
+}
+.heading{
+background-color: yellow;
+font-size: 50px;
+}
+.section1{
+font-family: sans-serif;
+font-size: 60px;
+color: rgb(10, 87, 231);
+background-color: aqua;
+border: 2px solid green;
+}
+/*-- h1,p,h2,h5 {
+background-color: pink;
+}--*/
