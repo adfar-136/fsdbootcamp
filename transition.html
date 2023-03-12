@@ -1,0 +1,37 @@
+<html>
+    <head>
+     <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            /* transition-property: width;
+            transition-duration: 2s; */
+            transition: width 6s ease,height 6s ease-in,background-color 6s linear,transform 6s ease-out;
+        }
+        div:hover{
+            width: 400px;
+            height: 400px;
+            background-color: darkorchid;
+            transform: skew(35deg);
+        }
+       .heading1{
+        color: rgb(12, 225, 143);
+        font-size: 60px;
+        background-color: aqua;
+        transition: font-size 3s,padding 2s,background-color 3s,transform 3s;
+        transition-timing-function: linear;
+       }
+       .heading1:hover{
+        font-size: 100px;
+        background-color: brown;
+        transform: skew(35deg);
+        padding: 40px;
+       }
+     </style>
+    </head>
+    <body>
+        <div></div>
+        <h1 class="heading1">Adfar Rasheed</h1>
+    </body>
+</html>
