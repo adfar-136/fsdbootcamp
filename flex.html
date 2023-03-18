@@ -1,0 +1,35 @@
+<html>
+  <head>
+    <style>
+      .flex-container {
+        color: red;
+        font-size: 40px;
+        background-color: gray;
+        display: flex;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+        /*flex-wrap: wrap;
+        flex-direction: row;*/
+        flex-flow: wrap row;
+      }
+      .flex-container > div{
+        background-color: blue;
+        margin: 10px;
+        padding: 20px;
+        text-align: center;
+        line-height: 70px;
+
+        width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div>a</div>
+      <div>b</div>
+      <div>c</div>
+      
+    </div>
+  </body>
+</html>
