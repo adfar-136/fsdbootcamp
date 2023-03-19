@@ -1,0 +1,61 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <style>
+    .mediaa{
+        background-color: gray;
+        margin: 20px;
+        padding: 20px;
+        color: green;
+        font-size: 40px;
+    }
+    img{
+      width: 500px;
+      height: 500px;
+    }
+    @media all and (max-width:600px){
+        .mediaa{
+            color: red;
+            font-size:20px ;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    }
+    @media all and (max-width:800px) and (min-width:600px){
+        .mediaa{
+            color: yellow;
+            background-color: green;
+        }
+    }
+    @media print{
+        .mediaa{
+            color: red;
+            font-size: 100px;
+        }
+    }
+  </style>    
+</head>
+  <body>
+    <img src="./cat.jpg" alt="">
+    <div class="mediaa">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam asperiores
+      quis qui, recusandae dolor hic quasi eligendi aliquam non corrupti maiores
+      laudantium cumque cupiditate molestiae, autem dicta quod. Odio accusamus
+      aspernatur nulla aut enim deleniti omnis voluptate dolorum dolor numquam.
+    </div>
+    <div class="mediaa">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo alias totam
+      exercitationem, quod, nihil sint nulla nemo voluptate possimus earum error
+      iusto fuga cum sed maiores! Veniam excepturi, obcaecati eum repellat rem
+      enim officia qui odio officiis expedita voluptates sequi quod quasi!
+      Officia, quisquam reprehenderit! Commodi soluta fugiat laudantium, maiores
+      sit accusamus quaerat ipsam quod quia omnis, suscipit sed cupiditate
+      mollitia dolorem neque esse obcaecati atque nobis debitis a facilis quo
+      doloribus. Inventore eum reiciendis nemo recusandae ipsum dolor eos
+      sapiente quibusdam aut quos? Quaerat sequi cum dolorum a tenetur. Quia
+      nihil consectetur error, maxime sint dicta eveniet nulla dolores!
+    </div>
+  </body>
+</html>

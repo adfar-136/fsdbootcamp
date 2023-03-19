@@ -1,0 +1,42 @@
+<html>
+    <head>
+      <style>
+        .header{
+            grid-area: header;
+        }
+        .sidenav{
+            grid-area: sidenav;
+        }
+        .content{
+            grid-area: content;
+        }
+        .footer{
+            grid-area: footer;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: 140px 140px 140px;
+            grid-template-areas: "... header header"
+            "sidenav content content"
+            "footer footer footer";
+            gap: 15px;
+            padding: 10px;
+            background-color: gray;
+        }
+        .grid-container > div {
+            background-color: aqua;
+        }
+      </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="box header">Header</div>
+            <div class="box sidenav">Sidenav</div>
+            <div class="box content">Content
+                <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eos cupiditate repudiandae numquam eius eveniet voluptatem neque dolor veritatis perferendis!
+            </div>
+            <div class="box footer">footer</div>
+            
+        </div>
+    </body>
+</html>

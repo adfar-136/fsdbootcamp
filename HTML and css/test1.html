@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title> Grid Layout</title>
+        <Style>
+            .itemA {
+                grid-area: A;
+            }
+            .itemB {
+                grid-area: B;
+            }
+            .itemC {
+                grid-area: C;
+            }
+            .itemD {
+                grid-area: D;
+            }
+            
+            .gridContent{
+                display: grid;
+                background-color: gray;
+                height: 400px;
+                padding: 10px;
+                gap: 20px;
+                grid-template-areas: "A A A B"
+                 "C D D B";
+
+            }
+
+            .gridContent > div {
+                background-color: aqua;
+                text-align: center;
+                
+            }
+
+        </Style>
+    </head>
+    <body>
+        <div class="gridContent">
+            <div class="itemA"> A </div>
+            <div class="itemB"> B </div>
+            <div class="itemC"> C </div>
+            <div class="itemD"> D </div>
+        </div>
+    </body>
+</html>
