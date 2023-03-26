@@ -22,7 +22,7 @@
 // console.log(add(421,36))    
 
 
-var add = function (x,y){
-    console.log(x+y)
-}
-add(5,6)
+// var add = function (x,y){
+//     console.log(x+y)
+// }
+// add(5,6)

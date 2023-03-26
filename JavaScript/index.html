@@ -6,13 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
-      let i = 0;
-      do {
-        console.log(i);
-        i++;
-      } while (i < 10);
-      var a="adfar"
-      console.log(a)
+      var num = 2;
+      function double(x){
+          function thrice(y){
+            return y*y*y
+          }
+          var a = 10;
+          var three = thrice(4)
+          console.log(three);
+          return x*x
+      }
+    
+      var twice = double(4)
+      console.log(twice)
     </script>
   </head>
   <body>

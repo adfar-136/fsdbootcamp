@@ -23,8 +23,16 @@
 //     console.log(i)
 //     i++;
 // }
-let i = 20;
-do{
-    console.log(i)
+// let i = 20;
+// do{
+//     console.log(i)
+//     i++;
+// } while(i<10)
+let sum = 0
+let n = 100
+ let i = 0
+while(i<=n){
+    sum= sum+i;
     i++;
-} while(i<10)
+}
+console.log(sum)
