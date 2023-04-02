@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Adfar</h1>
+    <h1>Rasheed</h1>
+    <h1>coding</h1>
+    <h1>HTML</h1>
+    <p class="para"></p>
+    <h1 class="para"></h1>
+    <b class="para"></b>
+    <h4 class="para"></h4>
+
+    <h5 id="h5">hi</h5>
+    <h2 id="h2"></h2>
+    <script>
+        let text = document.getElementById("h5").innerText;
+        document.getElementById("h2").innerHTML=text;
+        console.log(text);
+        const ele= document.getElementsByClassName("para")
+        for(let i =0;i<ele.length;i++){
+            ele[i].innerHTML="Hello Adfar"
+        }
+        const element = document.getElementsByTagName("h1")
+       /*-- element[0].style.color = "red"
+        element[1].style.color = "red"
+        element[2].style.color = "red"
+        element[3].style.color = "red" --*/
+        for (let i =0;i<element.length;i++){
+            element[i].style.color="red"
+        }
+    </script>
+</body>
+</html>

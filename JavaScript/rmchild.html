@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+    <ul id="list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JS</li>
+        <li>React</li>
+    </ul>
+    <button onclick="myFunction()">Remove</button>
+    <button onclick="myFun()">Replace</button>
+    <script>
+        function myFun(){
+            const element = document.getElementById("list").children[0]
+            const newNode = document.createTextNode("ADfar")
+            element.replaceChild(newNode,element.childNodes[0])
+        }
+        function myFunction(){
+            let list = document.getElementById("list")
+           /*-- element.removeChild(element.firstElementChild)
+           if(list.hasChildNodes()){
+            list.removeChild(list.children[2])
+           }--*/
+           while (list.hasChildNodes){
+            list.removeChild(list.firstChild)
+           }
+        }
+       
+    </script>
+</body>
+</html>

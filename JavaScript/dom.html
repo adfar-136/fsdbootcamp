@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1 id="heading">Hey welcome</h1>
+    
+    <p id="paraa">adfar rasheed dar , coding html css</p>
+    <button onclick="myfunc()">Remove</button>
+
+    <script>
+        function myfunc(){
+            let ele = document.getElementById("paraa")
+            ele.remove()
+        }
+        const element = document.getElementById("heading")
+        element.innerHTML="Hello Adfar"
+        const para = document.createElement("p")
+        para.innerHTML = "Coding"
+        document.body.appendChild(para)
+    </script>
+</body>
+</html>
