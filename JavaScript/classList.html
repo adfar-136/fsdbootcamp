@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .namme{
+            color: blue;
+            background-color: aqua;
+            border: 2px red solid;
+        }
+        .adfarr{
+            color: red;
+            background-color: greenaqua;
+            border: 2px gray solid;
+        }
+    </style>
+<body>
+    <h1 id="heading">Adfar Rasheed</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi iure quos magni voluptatibus at deserunt nobis cupiditate maiores soluta enim.</p>
+    <button onclick="myFunction()">Add</button>
+    <button onclick="myfun()">Remove</button>
+    <button onclick="myfunc()">Add Attribute</button>
+    <input type="text">
+    <script>
+        function myfunc(){
+            document.getElementById("heading").setAttribute("class","adfarr")
+        }
+        function myFunction(){
+            const element = document.getElementById("heading").classList;
+            element.add("namme")
+            console.log(element)
+        }
+        function myfun(){
+            const elemnt = document.getElementById("heading").classList;
+            elemnt.remove("namme")
+        }
+    </script>
+</body>
+</html>

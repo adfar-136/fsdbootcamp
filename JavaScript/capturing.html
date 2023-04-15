@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div1">
+        <button id="btn1" onclick="event.stopPropagation()">I am Child button</button>
+    </div>
+    <script>
+       /*-- var parent = document.querySelector("#div1")
+        parent.addEventListener("click",function(){
+            console.log("parent is invoked")
+        })
+        var child = document.querySelector("#btn1")
+        child.addEventListener("click",function(){
+            console.log("child is invoked")
+        }) */
+        var parent = document.querySelector("#div1")
+        parent.addEventListener("click",function(){
+            console.log("parent is invoked")
+        },true)
+        var child = document.querySelector("#btn1")
+        child.addEventListener("click",function(){
+            console.log("child is invoked")
+        }) 
+
+    </script>
+</body>
+</html>

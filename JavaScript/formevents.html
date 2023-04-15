@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label for=""
+        >Enter your Name: <input type="text" id="fname" onblur="myfunction()"
+      /></label>
+      <label for=""
+        >Enter your email: <input type="text" id="email" onfocus="onfun()"
+      /></label>
+      <label for=""
+        >Enter password: <input type="text" id="pwd" onchange="myfun()"
+      /></label>
+      <select name="" id="skills" onchange="myf()">
+        <option >None</option>
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JavaScript">Javascript</option>
+        <option value="React">React</option>
+      </select>
+      <h1 id="selectskill"></h1>
+    </form>
+    <script>
+      function myf() {
+        var element = document.getElementById("skills").value;
+        document.getElementById("selectskill").innerHTML =
+          "Your skill that you have selected is: " + element;
+      }
+      function myfun() {
+        alert("Adfar");
+      }
+      function onfun() {
+        var element = document.getElementById("email");
+        element.style.color = "red";
+        element.style.fontSize = "20px";
+        element.style.padding = "20px";
+      }
+      function myfunction() {
+        var element = document.getElementById("fname");
+        element.value = element.value.toUpperCase();
+      }
+    </script>
+  </body>
+</html>

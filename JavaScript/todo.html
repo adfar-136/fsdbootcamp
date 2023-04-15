@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My Todo List Application</h1>
+    <input type="text" id="inputfield" placeholder="Add an Item">
+    <button onclick="myfunction()">Add</button>
+    <ul id="listt">
+
+    </ul>
+    <script>
+        const ulist = document.getElementById("listt")
+        const inputlist = document.getElementById("inputfield");
+        function myfunction(){
+            const listitem = document.createElement("li");
+            listitem.innerText = inputlist.value
+            ulist.appendChild(listitem)
+            const removebtn = document.createElement("button");
+            removebtn.innerText="Remove";
+            removebtn.onclick =()=>{
+                ulist.removeChild(listitem)
+            }
+          listitem.appendChild(removebtn)
+        }
+    </script>
+</body>
+</html>
