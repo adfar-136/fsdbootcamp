@@ -1,0 +1,12 @@
+console.log("1")
+setTimeout(function(){
+    console.log("Adfar")
+},2000)
+console.log("2")
+setTimeout(()=>{
+    console.log("js")
+},1000)
+console.log("3")
+setInterval(()=>{
+    console.log("html")
+},2000)
