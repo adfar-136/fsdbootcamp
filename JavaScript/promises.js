@@ -12,7 +12,7 @@
 // }).catch(function(){
 //     console.log("promise is rejected")
 // })
-
+console.log("1")
 var promise = new Promise(function(resolve,reject){
     reject("Adfar Rasheed")
 })
@@ -21,3 +21,5 @@ promise.then(function(result){
 },function(error){
     console.log(error)
 })
+console.log("2")
+console.log("3")
