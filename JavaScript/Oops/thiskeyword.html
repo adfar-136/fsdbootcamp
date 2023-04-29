@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        console.log(this);
+        function adfar(){
+            console.log(this);
+        }
+        adfar();
+        const adfarr ={
+            firstname:"Adfar",
+            secondname:"rashid",
+            age:25,
+            myfunction: function(){
+                console.log(adfarr.firstname)
+            }
+        }
+        adfarr.myfunction()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

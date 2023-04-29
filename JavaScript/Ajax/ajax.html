@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Ajax Fetching</h1>
+    <button id="fetchBtn">Fetch Data</button>
+    <script>
+        let fetchBtn = document.getElementById("fetchBtn")
+        fetchBtn.addEventListener('click',buttonclickHandler)
+        function buttonclickHandler(){
+            console.log("Getting a request");
+            let xhr = new XMLHttpRequest()
+            xhr.open("GET","https://newsapi.org/v2/everything?q=tesla&from=2023-03-29&sortBy=publishedAt&apiKey=28a2c6b3aa1945c2afd8012e42fdac9e",true)
+            xhr.onload = function(){
+                if(this.status === 200){
+                    const obj = JSON.parse(this.responseText)
+                    console.log(obj);
+                }
+                else{
+                    console.log("some error occured");
+                }
+                
+            }
+            xhr.send()
+        }
+    </script>
+</body>
+</html>
